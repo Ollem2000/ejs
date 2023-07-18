@@ -1,2 +1,2 @@
 # ejs
- my studies related to ejs
+ My studies related to ejs
