@@ -1,6 +1,5 @@
 <nav>
-	<a href="/">INICIO</a>
-	<a href="/sobre">SOBRE</a>
-	<a href="/">CONFIGURAÇÕES</a>
-	<a href="/">PERFIL</a>
+	<% qualitys.forEach(function(a){ %>
+		<a id="<%=a.id%>" href="<%=a.href%>"><%=a.title%></a>
+	<% }) %>
 </nav>

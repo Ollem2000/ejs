@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<%- include("../partials/head", {navOn: "posts"}); %>
+<body>
+<%- include("../partials/nav"); %>
+
+<main>
+	<section>
+		<h2 class="title2">Postagens</h2>
+	</section>
+	<% news.forEach(function(a){ %>
+		<a href="<%=a.href%>">
+			<section>
+				<h3 class="title3"><%=a.title%></h3>
+				<p class="text"><%=a.paragraph%></p>
+			</section>
+		</a>
+	<% }) %>
+</main>
+
+<%- include("../partials/footer"); %>
+</body>
+</html>
